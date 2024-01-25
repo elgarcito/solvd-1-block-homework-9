@@ -1,0 +1,12 @@
+17:29:16.902 [main] WARN  com.solvd.hardwarestore.products.GasProduct - You have not enough stock to sell this gas product, your stock is: 10 units the minimum amount allowed is 10 units
+
+17:29:16.916 [main] WARN  com.solvd.hardwarestore.products.GasProduct - You have not enough stock to sell this gas product, your stock is: 10 units the minimum amount allowed is 10 units
+
+17:29:16.916 [main] WARN  com.solvd.hardwarestore.products.GasProduct - You can't sell that amount of this gas product, you need to have at least: 
+10 units in your stock.
+
+17:29:16.960 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.LongEmployeeNameException: The name is too long, pleas make it less than 20 characters.
+17:29:16.964 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.NumberInNamesException: The employee name has a number, please correct it.
+17:29:16.966 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.EmailException: Please only use a @gmail.com email.
+17:29:16.968 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.PhoneNumberException: The phone number has 9 digits and should be 8 digits
+17:29:16.970 [main] ERROR com.solvd.hardwarestore.person.Employee - com.solvd.hardwarestore.exceptions.EmployeeSpecialityException: The specialitycleaner doesn't exist, please enter a valid one: seller or deposit.
