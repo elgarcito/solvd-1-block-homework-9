@@ -18,6 +18,7 @@ public class Employee extends Person {
     private int employeeAge;//how old is the employee
     private static ArrayList<Employee> employeeList=new ArrayList<>();//The list that saves the Object employees
     private static HashSet<String> resumedEmployeeInformationList=new HashSet<>();//List with only resumed information
+    private Integer vacation;//The amount of vacation for each employee
 
 
     //Constructor
@@ -60,6 +61,14 @@ public class Employee extends Person {
 
     public void setEmployeeAge(int employeeAge) {
         this.employeeAge = employeeAge;
+    }
+
+    public void setVacation(Integer vacation) {
+        this.vacation = vacation;
+    }
+
+    public Integer getVacation() {
+        return vacation;
     }
 
 

@@ -20,10 +20,16 @@ Client: the one that buys the product.
  */
 
 import com.solvd.hardwarestore.abstractclasses.RawMaterial;
+import com.solvd.hardwarestore.funcinterfaces.ModifyAnyString;
+import com.solvd.hardwarestore.funcinterfaces.OperateInEmployeeList;
+import com.solvd.hardwarestore.funcinterfaces.ResultAsInteger;
 import com.solvd.hardwarestore.person.Employee;
 import com.solvd.hardwarestore.readwritefile.ReadingFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Main {
@@ -41,12 +47,49 @@ public class Main {
         //Calling the method to read and write in files
         ReadingFile.readWriteFile(inputFilePath, outputFilePath);
         System.out.println();
-        //Five lambda functions used
+        //Five lambda functions used in separateProduct()
         Employee joseAntonio = new Employee("Jose Antonio", "123@gmail.com", "12345678", "seller");
+        joseAntonio.setVacation(15);
+        Employee carlosRusso = new Employee("carlos Russo", "123@gmail.com", "12345678", "Deposit");
+        carlosRusso.setVacation(20);
         LOGGER.info(RawMaterial.separateProduct("sand", 1000, joseAntonio));
         System.out.println();
         LOGGER.info(RawMaterial.separateProduct("gasoline", 15, joseAntonio));
         System.out.println();
+
+        //Three custom lambda functions with generics
+        //Custom lambda function 1: OperateInEmployeeList<T extends ArrayList<Employee>,R> retrieves something
+        //Of an arrayList of Employees
+
+        OperateInEmployeeList<ArrayList<Employee>, ArrayList<String>> getEmployeeNameList = employeesList -> {
+            ArrayList<String> list1 = new ArrayList<>();
+            for (Employee employee : employeesList) {
+                list1.add(employee.getPersonName());
+            }
+            return list1;
+        };
+        ArrayList<String> list2 = getEmployeeNameList.getFromEmployeeArray(Employee.getCopyOfEmployeeArrayList());
+        for (String name : list2) {
+            LOGGER.info(name);
+        }
+
+
+        //Custom lambda function 2 ModifyAnyString<T> Retrieve always a string
+        ModifyAnyString<String> addRandomGoodBye = text->{
+            String [] goodBye={ " .Goodbye! Take care.",
+                    " .Farewell! Until we meet again.",
+                    " .Adios! Wishing you the best.",};
+            Random random =new Random();
+            return text+goodBye[random.nextInt(2)];
+        };
+
+        LOGGER.info(addRandomGoodBye.getModifiedString("You own 22$"));
+
+        //Custom lambda function 3 ResultAsInteger <T,V> The result is always an integer
+        ResultAsInteger<Employee,Employee> howManyVacationDays= (employee, employee1)->
+                employee.getVacation()+employee1.getVacation();
+
+        LOGGER.info("both employees have: "+howManyVacationDays.resultIsInteger(joseAntonio,carlosRusso)+" days of vacation");
 
 
     }
