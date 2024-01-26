@@ -19,20 +19,9 @@ ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
 
-import com.solvd.hardwarestore.customlinkedlist.CustomLinkedList;
-import com.solvd.hardwarestore.exceptions.AutoCloseableNoResource;
-import com.solvd.hardwarestore.finalclasess.PayingRates;
-import com.solvd.hardwarestore.person.BigClient;
-import com.solvd.hardwarestore.person.Employee;
-import com.solvd.hardwarestore.person.ProductSupplier;
-import com.solvd.hardwarestore.products.*;
+import com.solvd.hardwarestore.readwritefile.ReadingFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.solvd.hardwarestore.*;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 
 
 public class Main {
@@ -43,11 +32,11 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        //Examples to create a conflict
-        ElectricProduct lightBulb =new ElectricProduct("Light Bulb","Led small light bulb");
-        Employee carlosRusso = new Employee("carlos Russo", "123@gmail.com", "12345678", "Deposit");
-        ConstructionProduct sand = new ConstructionProduct("Sand", "White sand", "Tn");
-        GardenProduct gardenScissors = new GardenProduct("Big scissors", "Big size scissors to cut grass", false);
-        GasProduct gasBurner = new GasProduct("Gas Burner", "Gas kitchen burner");
+        // Path of the input file
+        String inputFilePath = "src/main/resources/input.txt";
+        // Path of the output file
+        String outputFilePath = "src/main/resources/output.txt";
+        //Calling the method to read and write in files
+        ReadingFile.readWriteFile(inputFilePath, outputFilePath);
     }
 }

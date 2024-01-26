@@ -27,15 +27,35 @@ Besides that, we have the persons that interact with the store these are:
 ## Exercises and references:
 
 ### 16/11/2023
-Generate a conflict in gitHub. 
-Make a pull request with branches.
-Generate a pull request with fork.
+Read text from the file and calculate the numbers of the unique words.
+Write the result to the file.
+The main requirement is: using StringUtils and FileUtils to implement it with minimun
+lines of code.
 
 ### Solution
 
-A new branch called newBranch1 was created, and a conflict was made and resolved.
-You can see it step-by-step pictures in the following directory:
-https://drive.google.com/drive/folders/1HKQUEFW7dcAeu5lncHR6bQBDiOPCzZM7?usp=drive_link
+Create the ReadingFile.java class in the readwritefile package.
+It has a static class ReadFile.readWriteFile(inputFilePath, ouputFilePath)
+that once called:
+1. Read the input.txt file in the resources package
+2. Write output.txt file in the resources package.
+   This file sets a list with the unique words and the number of times that
+they appear in the input file.
 
-A pull request was made with small changes.You can see it step-by-step pictures in the following directory:
-https://drive.google.com/drive/folders/11uhG2z2faQPnUC3HJOPEl_gbkQNyr16x?usp=sharing
+As example: input:
+
+This is a text to see if the reading and counting work work
+
+output:
+- counting=1
+- the=1
+- a=1
+- see=1
+- and=1
+- work=2
+- this=1
+- reading=1
+- is=1
+- text=1
+- to=1
+- if=1
