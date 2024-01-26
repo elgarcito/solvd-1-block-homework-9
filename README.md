@@ -26,36 +26,22 @@ Besides that, we have the persons that interact with the store these are:
 
 ## Exercises and references:
 
-### 16/11/2023
-Read text from the file and calculate the numbers of the unique words.
-Write the result to the file.
-The main requirement is: using StringUtils and FileUtils to implement it with minimun
-lines of code.
+### 28/11/2023
+* Use at least 5 lambda functions from the java.util.function package. 
+* Create 3 custom Lambda functions with generics. 
+* Create 5 complex Enums(with fields, methods, blocks).
 
 ### Solution
+The five lambda functions are in the class RawMaterial
+in the method separateProduct(String materialType, double amount ,Employee employee).
+The functions used are: 
+* Function-Bifunction-Predicate-Biconsumer-Supplier.
+This method tells an employee how to separate gasoline and sand,
+  in how many recipients or bags, the estimated time of work to do it and 
+  the transaction date.
+  This method applies only in this class and this method
+  .For that reason, we use these functions
 
-Create the ReadingFile.java class in the readwritefile package.
-It has a static class ReadFile.readWriteFile(inputFilePath, ouputFilePath)
-that once called:
-1. Read the input.txt file in the resources package
-2. Write output.txt file in the resources package.
-   This file sets a list with the unique words and the number of times that
-they appear in the input file.
 
-As example: input:
+The example of this could be seen in the main method.
 
-This is a text to see if the reading and counting work work
-
-output:
-- counting=1
-- the=1
-- a=1
-- see=1
-- and=1
-- work=2
-- this=1
-- reading=1
-- is=1
-- text=1
-- to=1
-- if=1

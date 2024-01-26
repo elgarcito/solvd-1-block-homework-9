@@ -19,6 +19,8 @@ ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
 
+import com.solvd.hardwarestore.abstractclasses.RawMaterial;
+import com.solvd.hardwarestore.person.Employee;
 import com.solvd.hardwarestore.readwritefile.ReadingFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -38,5 +40,14 @@ public class Main {
         String outputFilePath = "src/main/resources/output.txt";
         //Calling the method to read and write in files
         ReadingFile.readWriteFile(inputFilePath, outputFilePath);
+        System.out.println();
+        //Five lambda functions used
+        Employee joseAntonio = new Employee("Jose Antonio", "123@gmail.com", "12345678", "seller");
+        LOGGER.info(RawMaterial.separateProduct("sand", 1000, joseAntonio));
+        System.out.println();
+        LOGGER.info(RawMaterial.separateProduct("gasoline", 15, joseAntonio));
+        System.out.println();
+
+
     }
 }
