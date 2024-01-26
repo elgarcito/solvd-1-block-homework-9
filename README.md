@@ -53,7 +53,8 @@ The example of this implementation could be seen in the main method.
 
 The five Enums are in the package enumexamples and are: 
 * PhoneNumbers, CurrencyExchange, BankAccounts, LowLevelPassword,
-  ImportantEmails.Each one has fields, methods and blocks.
+  ImportantEmails.
+  Each one has fields, methods, and blocks.
 
 The example of using the static function in each case could be seen in the main method.
 
