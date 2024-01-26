@@ -42,6 +42,20 @@ This method tells an employee how to separate gasoline and sand,
   This method applies only in this class and this method
   .For that reason, we use these functions
 
+The example of this implementation could be seen in the main method.
 
-The example of this could be seen in the main method.
+The three custom lambda functions with generics are in the package funcinterfaces. These are:
+* ModifyAnyString: Retrieves a string
+* OperateInEmployeeList: Retrieves something when you operate into a List of employee
+* ResultAsInteger: Retrieves always an integer
+
+The example of this implementation could be seen in the main method.
+
+The five Enums are in the package enumexamples and are: 
+* PhoneNumbers, CurrencyExchange, BankAccounts, LowLevelPassword,
+  ImportantEmails.Each one has fields, methods and blocks.
+
+The example of using the static function in each case could be seen in the main method.
+
+
 

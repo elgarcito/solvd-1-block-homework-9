@@ -20,6 +20,7 @@ Client: the one that buys the product.
  */
 
 import com.solvd.hardwarestore.abstractclasses.RawMaterial;
+import com.solvd.hardwarestore.enumexamples.*;
 import com.solvd.hardwarestore.funcinterfaces.ModifyAnyString;
 import com.solvd.hardwarestore.funcinterfaces.OperateInEmployeeList;
 import com.solvd.hardwarestore.funcinterfaces.ResultAsInteger;
@@ -90,7 +91,24 @@ public class Main {
                 employee.getVacation()+employee1.getVacation();
 
         LOGGER.info("both employees have: "+howManyVacationDays.resultIsInteger(joseAntonio,carlosRusso)+" days of vacation");
-
+        System.out.println();
+        //Accessing Five enums static methods
+        //BankAccount
+        BankAccounts.showBankAccounts();
+        System.out.println();
+        //CurrencyExchange
+        CurrencyExchange.showExchangeRate();
+        System.out.println();
+        //EmergencyExchangePhonenNumber
+        EmergencyExchangePhonenNumber.showNumbers();
+        System.out.println();
+        //ExchangerPlatformPassword
+        ExchangerPlatformPassword.showPasswords();
+        System.out.println();
+        //ImportantEmails
+        for (String email:ImportantEmails.getEmails()) {
+            LOGGER.info(email);
+        }
 
     }
 }
