@@ -44,10 +44,10 @@ public class Main {
 
     public static void main(String[] args) {
         //Examples to create a conflict
-        ElectricProduct lightBulb =new ElectricProduct("Red light Bulb","Red led small light Bulb");
-        Employee carlosRusso = new Employee("Carlos Antony Russo", "123@gmail.com", "12345678", "seller");
-        ConstructionProduct sand = new ConstructionProduct("sand", "white sand", "Tn");
-        GardenProduct gardenScissors = new GardenProduct("Big scissors", "Big size scissors to cut trees", false);
-        GasProduct gasBurner = new GasProduct("Gas Burner", "Gas barbeque burner");
+        ElectricProduct lightBulb =new ElectricProduct("Light Bulb","Led small light bulb");
+        Employee carlosRusso = new Employee("carlos Russo", "123@gmail.com", "12345678", "Deposit");
+        ConstructionProduct sand = new ConstructionProduct("Sand", "White sand", "Tn");
+        GardenProduct gardenScissors = new GardenProduct("Big scissors", "Big size scissors to cut grass", false);
+        GasProduct gasBurner = new GasProduct("Gas Burner", "Gas kitchen burner");
     }
 }

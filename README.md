@@ -26,34 +26,16 @@ Besides that, we have the persons that interact with the store these are:
 
 ## Exercises and references:
 
-### 14/11/2023
-
-* Move all projects to Maven.
-* Build jar file and deploy to the local repository.
-* Add 2 Plugins.
-* Run mvn for different phases from the Maven lifecycle. Check the result.
+### 16/11/2023
+Generate a conflict in gitHub. 
+Make a pull request with branches.
+Generate a pull request with fork.
 
 ### Solution
-The project was moved to maven following the structure given in the
-theoretical classes.
 
-All the previous operations done in the previous
-exercises were added to the main method in order to test the package creation
-with maven.
+A new branch called newBranch1 was created, and a conflict was made and resolved.
+You can see it step-by-step pictures in the following directory:
+https://drive.google.com/drive/folders/1aPUrI7j2o6Xd7OfIDnDRSRgBSf87Y5Tl?usp=sharing
 
-Build jar file was created with mvn install.
-Here you can see a screenshot:
-https://drive.google.com/file/d/12PzTYK1dDr7_wooUrqSZJecpVOT_UO4V/view?usp=sharing
-
-Then it was deployed in the local repository with mvn deploy.
-Here you can see a screenshot:
-https://drive.google.com/file/d/1zFeavhrVIOKkerx0SUay4Bc1kfbpCFs9/view?usp=sharing
-
-The two plugins added are:
-* Added: maven-compiler-plugin, maven-jar-plugin.
-
-This was made through pom.xml file
-
-The file lifeCycleStages.txt has the result of all the terminal output
-in each phase you can see it in:
-* https://drive.google.com/file/d/1GINcUpLh30BV1tQhW0x3PmoIRz6oJMbc/view?usp=sharing
+A pull request was made with small changes.You can see it step-by-step pictures in the following directory:
+https://drive.google.com/drive/folders/11uhG2z2faQPnUC3HJOPEl_gbkQNyr16x?usp=sharing
