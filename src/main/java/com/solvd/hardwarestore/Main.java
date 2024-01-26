@@ -49,7 +49,5 @@ public class Main {
         ConstructionProduct sand = new ConstructionProduct("Sand", "White sand", "Tn");
         GardenProduct gardenScissors = new GardenProduct("Big scissors", "Big size scissors to cut grass", false);
         GasProduct gasBurner = new GasProduct("Gas Burner", "Gas kitchen burner");
-
-
     }
 }
