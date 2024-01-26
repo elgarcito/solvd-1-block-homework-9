@@ -35,7 +35,7 @@ Generate a pull request with fork.
 
 A new branch called newBranch1 was created, and a conflict was made and resolved.
 You can see it step-by-step pictures in the following directory:
-https://drive.google.com/drive/folders/1aPUrI7j2o6Xd7OfIDnDRSRgBSf87Y5Tl?usp=sharing
+https://drive.google.com/drive/folders/1HKQUEFW7dcAeu5lncHR6bQBDiOPCzZM7?usp=drive_link
 
 A pull request was made with small changes.You can see it step-by-step pictures in the following directory:
 https://drive.google.com/drive/folders/11uhG2z2faQPnUC3HJOPEl_gbkQNyr16x?usp=sharing
