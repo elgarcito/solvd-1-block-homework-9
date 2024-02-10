@@ -19,13 +19,13 @@ ProductSupplier: the one that sells the product.
 Client: the one that buys the product.
  */
 
-import com.solvd.hardwarestore.abstractclasses.RawMaterial;
-import com.solvd.hardwarestore.enumexamples.*;
-import com.solvd.hardwarestore.funcinterfaces.ModifyAnyString;
-import com.solvd.hardwarestore.funcinterfaces.OperateInEmployeeList;
-import com.solvd.hardwarestore.funcinterfaces.ResultAsInteger;
+import com.solvd.hardwarestore.abstract_classes.RawMaterial;
+import com.solvd.hardwarestore.enum_examples.*;
+import com.solvd.hardwarestore.func_interfaces.ModifyAnyString;
+import com.solvd.hardwarestore.func_interfaces.OperateInEmployeeList;
+import com.solvd.hardwarestore.func_interfaces.ResultAsInteger;
 import com.solvd.hardwarestore.person.Employee;
-import com.solvd.hardwarestore.readwritefile.ReadingFile;
+import com.solvd.hardwarestore.read_write_file.ReadingFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
